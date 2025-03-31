@@ -46,7 +46,10 @@ class MainActivity : ComponentActivity() {
                 )
 
                 Row {
-                    Button(onClick = { /*TODO*/ }) {
+                    Button(onClick = {
+                        time_of_day =""
+                        your_meal =""
+                    }) {
                         Text(text = "Look for my meal")
                     }
                     Button(onClick = { /*TODO*/ }) {
