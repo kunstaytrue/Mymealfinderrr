@@ -49,7 +49,10 @@ class MainActivity : ComponentActivity() {
                     Button(onClick = { /*TODO*/ }) {
                         Text(text = "Look for my meal")
                     }
-                    
+                    Button(onClick = { /*TODO*/ }) {
+                        Text(text = "Refresh")
+                        
+                    }
                 }
             }
         }
