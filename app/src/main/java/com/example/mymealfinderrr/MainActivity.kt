@@ -50,10 +50,10 @@ class MainActivity : ComponentActivity() {
                         time_of_day =""
                         your_meal =""
                     }) {
-                        Text(text = "Look for my meal")
+                        Text(text = "Refresh")
                     }
                     Button(onClick = { /*TODO*/ }) {
-                        Text(text = "Refresh")
+                        Text(text = "Look for my meal")
                     }
                 }
 
