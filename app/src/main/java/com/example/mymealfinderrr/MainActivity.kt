@@ -33,7 +33,15 @@ class MainActivity : ComponentActivity() {
             Column {
                 Text(text = "MyMealFinderr")
 
-                OutlinedTextField(value = , onValueChange = )
+                OutlinedTextField(
+                    value = time_of_day, 
+                    onValueChange ={text->
+                         time_of_day = text  
+                    },
+                    placeholder = {
+                        Text(text = "Enter the time of day")
+                    }
+                )
             }
         }
     }
