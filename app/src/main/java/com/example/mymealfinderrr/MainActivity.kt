@@ -51,9 +51,10 @@ class MainActivity : ComponentActivity() {
                     }
                     Button(onClick = { /*TODO*/ }) {
                         Text(text = "Refresh")
-                        
                     }
                 }
+                
+                Text(text = "Meal of the day for $time_of_day is: /n/n $your_meal")
             }
         }
     }
