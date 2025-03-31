@@ -25,11 +25,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             var time_of_day by remember {
-                mutableStateOf("")
+                mutableStateOf("morning ")
             }
             
             var your_meal by remember {
-                mutableStateOf("")
+                mutableStateOf("eggs")
             }
             
             Column {
@@ -53,8 +53,9 @@ class MainActivity : ComponentActivity() {
                         Text(text = "Refresh")
                     }
                 }
-                
-                Text(text = "Meal of the day for $time_of_day is: /n/n $your_meal")
+
+                Text(text = "Meal of the day for $time_of_day is:")
+                Text(text = your_meal)
             }
         }
     }
