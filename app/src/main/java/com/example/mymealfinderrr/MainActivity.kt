@@ -63,6 +63,7 @@ class MainActivity : ComponentActivity() {
                     }
                 )
 
+                Spacer(modifier = Modifier.size(30.dp))
                 Row {
                     Button(onClick = {
                         time_of_day =""
