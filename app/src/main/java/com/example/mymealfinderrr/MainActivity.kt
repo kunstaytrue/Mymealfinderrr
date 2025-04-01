@@ -50,7 +50,7 @@ class MainActivity : ComponentActivity() {
                         time_of_day =""
                         your_meal =""
                     }) {
-                        Text(text = "Refresh")
+                        Text(text = "Reset")
                     }
                     Button(onClick = {
                         your_meal = when(time_of_day){
