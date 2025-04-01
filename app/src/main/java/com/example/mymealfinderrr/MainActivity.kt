@@ -25,11 +25,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             var time_of_day by remember {
-                mutableStateOf("morning ")
+                mutableStateOf("")
             }
             
             var your_meal by remember {
-                mutableStateOf("eggs")
+                mutableStateOf("")
             }
             
             Column {
@@ -52,7 +52,16 @@ class MainActivity : ComponentActivity() {
                     }) {
                         Text(text = "Refresh")
                     }
-                    Button(onClick = { /*TODO*/ }) {
+                    Button(onClick = {
+                        your_meal = when(time_of_day){
+                            "Morning" -> "Scrambled eggs with whole wheat toast and avocado"
+                            "Mid-Morning" -> "Boiled eggs with a slice of cheese"
+                            "Afternoon" -> "Grilled chicken with brown rice and steamed vegetables"
+                            "Mid-Afternoon" -> "Low-fat yogurt with granola"
+                            "Dinner" -> "Grilled fish with roasted sweet potatoes and spinach"
+                            else -> "Invalid time of day!"
+                        }
+                    }) {
                         Text(text = "Look for my meal")
                     }
                 }
