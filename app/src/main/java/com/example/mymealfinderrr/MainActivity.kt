@@ -81,7 +81,7 @@ class MainActivity : ComponentActivity() {
                             else -> "Invalid time of day!"
                         }
                     }) {
-                        Text(text = "Look for my meal")
+                        Text(text = "Suggest")
                     }
                 }
 
